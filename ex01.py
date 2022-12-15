@@ -1,9 +1,27 @@
 #
-# autor: michel
+# autor: Michel
 
 # data: 13/12/2022
 
+# continuação da aula sobre listas
+# trabalhando com matrizes (listas de listas) e laços aninhados (for) 
+# para percorrer as linhas e colunas da matriz (lista de listas) 
+# e realizar operações com os elementos da matriz.
+
+# vamos usar nessa aula uma matriz de ordem 3 (3 linhas e 3 colunas) 
+# para facilitar a visualização dos elementos da matriz.
+
+# a matriz é uma lista de listas, onde cada lista interna representa uma linha da matriz.
+# a matriz abaixo tem 3 linhas e 3 colunas.
+
+# tudo que vamos fazer com a matriz de ordem 3, podemos fazer com uma 
+# matriz de ordem n (n linhas e n colunas). 
+# ou seja uma matriz quadrada.
+
+
 # matriz de ordem = 3
+ordem = 3
+
 m1 = [[1,2,3],[4,5,6],[7,8,9]]
 
                   # ij ij ij
@@ -18,7 +36,7 @@ m2 = [[1,2,3],
       [4,5,6],
       [7,8,9]]
 
-ordem = 3
+
 
 # a) calcular a soma dos elementos da matriz
 somaTotal = 0
