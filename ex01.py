@@ -22,8 +22,12 @@
 # matriz de ordem = 3
 ordem = 3
 
+# dada a m1 abaixo, veja que é uma lista contendo 3 lista.
+# vamos usar os elementos de 1 a 9 para facilitar a visualização dos elementos da matriz.
 m1 = [[1,2,3],[4,5,6],[7,8,9]]
 
+# vamos visualizar os indices da matriz m1
+# sendo i o índice da linha e j o índice da coluna
                   # ij ij ij
                 #1  00 01 02
                 #2  10 11 12
