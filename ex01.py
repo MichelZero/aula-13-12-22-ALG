@@ -60,12 +60,12 @@ m2 = [[1,2,3],
 
 
 # a) calcular a soma dos elementos da matriz
-somaTotal = 0
-for i in range(ordem):
-  for j in range(ordem):
-    somaTotal += m1[i][j]
+somaTotal = 0 # acumulador para a soma dos elementos da matriz
+for i in range(ordem): # percorre as linhas da matriz (lista de listas)
+  for j in range(ordem): # percorre as colunas da matriz (lista de listas)
+    somaTotal += m1[i][j] # soma os elementos da matriz 
 
-print(f'soma Total = {somaTotal}')
+print(f'soma Total = {somaTotal}') # imprime a soma dos elementos da matriz
 
 # b) calcular a soma da linha 1 da matriz
 somaLinha1 = 0
@@ -105,10 +105,10 @@ print(f'soma Acima DS = {somaAcimaDS}')
 
 # f) calcular o quadrado dos elementos acima da DS da matriz,
 # adicionando em uma nova lista (apenas esses elementos).
-novaLista = []
+novaLista = [] # lista vazia para armazenar os elementos calculados (quadrados)
 for i in range(ordem):
   for j in range(ordem):
     if (i + j) <= (ordem - 2):
-      novaLista.append(m1[i][j]**2)
+      novaLista.append(m1[i][j]**2) # adiciona o quadrado do elemento na nova lista 
 
 print(f'nova lista = {novaLista}')
