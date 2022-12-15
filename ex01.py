@@ -28,14 +28,31 @@ m1 = [[1,2,3],[4,5,6],[7,8,9]]
 
 # vamos visualizar os indices da matriz m1
 # sendo i o índice da linha e j o índice da coluna
+
                   # ij ij ij
                 #1  00 01 02
                 #2  10 11 12
                 #3  20 21 22
-                # abaixo DP (i > j)
-                # DS (i+j) == (ordem - 1)
-                # Acima DS (i + j) <= (ordem - 2)
-                # abaixo DS (i + j) >= (ordem)
+# DP = diagonal principal (i == j)
+# DS = diagonal secundária (i + j) == (ordem - 1)
+# Acima DP (i < j)
+# abaixo DP (i > j)
+# Acima DS (i + j) <= (ordem - 2)
+# abaixo DS (i + j) >= (ordem)
+#                
+# vamos criar a matriz m2 abaixo para facilitar a visualização dos elementos da matriz.
+# o python permite que a matriz seja criada em uma única linha, sem precisar quebrar a linha
+# com o carácter \ (barra invertida).
+# podemos também quebra a linha apos a vírgula.
+# para isso, basta colocar os elementos da matriz entre colchetes e separados por vírgula.
+# o python vai entender que cada colchete representa uma linha da matriz.
+# veja o exemplo abaixo.
+# a matriz m2 abaixo tem 3 linhas e 3 colunas.
+# m2 = [[1,2,3],[4,5,6],[7,8,9]]
+# m2 = [[1,2,3],
+#      [4,5,6],
+#      [7,8,9]]
+# 
 m2 = [[1,2,3],
       [4,5,6],
       [7,8,9]]
